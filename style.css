@@ -1,0 +1,173 @@
+/* maquette type base*/
+h1,
+h2,
+h3,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  margin: 0 auto;
+  width: 34em; 
+   /* Astuce pour voir la grille */
+    /* pour un font-size de 20px */
+    font-size: 125%;
+    background-size: 100% 1.5em;
+   /*
+    background-image: -webkit-linear-gradient(#eee 1px, transparent 1px);
+    background-image: -moz-linear-gradient(#eee 1px, transparent 1px);
+    background-image: linear-gradient(#eee 1px, transparent 1px);*/
+}
+
+header {
+	background-color: white;
+	background-image: url(img/mouton.gif);
+	background-repeat: no-repeat;
+	
+
+}
+
+h1, 
+h2,
+h3  {
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-transform: lowercase;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.125;
+  margin-bottom: 0.275em;
+  margin-top: 0.75em;
+  text-align:center; 
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 0.600em;
+  margin-top: 1.800em;
+  text-align: center;
+  text-transform: uppercase;    
+}
+
+/* fin de maquette */ 
+
+
+/* début menu déroulant */
+
+.menu {
+	text-align: center; 
+	list-style-type: none;
+	left: 0;
+	top: 100%;
+	position: relative;
+	border-bottom: 1px solid grey;
+}
+
+.menu a {
+	text-decoration: none;
+	color: grey;
+	padding: 0 10px;
+	
+}
+
+.menu li {
+	display: inline-block;
+	line-height: 1.8;
+	text-transform: uppercase;
+	white-space: nowrap;
+} 
+
+
+
+/* menu non visible niveau 2
+.sous_menu {
+	display: none;
+} */
+
+
+
+
+/* premier déroulant */
+
+.menu a { 
+	text-decoration: none;
+	padding: 0 10px;
+	
+}
+
+.menu ul  {
+	position: absolute;
+	padding: 0;
+	display:none;
+}
+
+.menu li li {
+	display: block;
+	box-shadow: 2px 2px 5px black;
+}
+
+ul li {
+	position: relative;
+	display: block;
+}
+
+li {
+	position: relative;
+	top: 100%;
+	left: 0;
+}
+
+/* fin du premier */
+
+/* hover couleur sur li */ 
+
+ul a:hover {
+	color: black;
+	background-color: #38A89D;
+	text-decoration: none;
+	background-image: url(img/unicorn.gif);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	padding-left: 30px;
+
+}
+
+.menu li:hover>ul {
+	display:block;
+}
+
+
+ul li  {
+	text-decoration: none;
+}
+
+.menu ul ul {
+	left: 100%;
+	top: 0;
+	box-shadow: 2px 2px 5px black;
+}
+
+nav li {
+	background-color: white;
+}
